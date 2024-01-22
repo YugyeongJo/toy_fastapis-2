@@ -31,7 +31,7 @@ async def create_user(body: User) -> dict:
 
 # 로그인
 @router.get("/{id}", response_model=User)
-async def retrieve_event(id: PydanticObjectId) -> User:
+async def retrieve_user(id: PydanticObjectId) -> User:
     user = await user_database.get(id)
     if not user:
         raise HTTPException(
