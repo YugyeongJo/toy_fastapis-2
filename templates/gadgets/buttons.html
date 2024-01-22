@@ -1,0 +1,42 @@
+
+{% extends "nav_template.html"%}
+    <title>buttons</title>
+
+    
+    {% block main_container %}
+    
+    <main class="container">
+
+
+
+        
+        <!-- basic button style -->
+        <button class="btn">Basic</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-dark">Dark</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-link">Link</button>
+        <hr>
+        <div class="container mt-3">
+            <h2>Button Elements</h2>
+            <a href="#" class="btn btn-success">Link Button</a>
+            <button type="button" class="btn btn-success">Button</button>
+            <input type="button" class="btn btn-success" value="Input Button">
+            <input type="submit" class="btn btn-success" value="Submit Button">
+            <input type="reset" class="btn btn-success" value="Reset Button">
+        </div>
+
+        <hr>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">Sony</button>
+        </div>
+        {% endblock %}
+    

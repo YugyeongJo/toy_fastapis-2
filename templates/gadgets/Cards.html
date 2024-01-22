@@ -1,0 +1,29 @@
+{% extends "nav_template.html"%}
+
+    <title>Cards</title>
+
+    {% block main_container %}
+    <main class="container">
+        
+        
+        <!-- basic card -->
+        <div class="card">
+            <div class="card-header bg-primary">header</div>
+            <div class="card-body bg-secondary">contents</div>
+            <div class="card-footer bg-info">footer</div>
+        </div>
+        <hr>
+        <!-- card 배치 -->
+        <div class="row g-0">
+            <div class="col card">
+                <div class="card-header bg-primary">header</div>
+                <div class="card-body bg-secondary">contents</div>
+                <div class="card-footer bg-info">footer</div>
+            </div>
+            <div class="col card">
+                <div class="card-header bg-primary">header</div>
+                <div class="card-body bg-secondary">contents</div>
+                <div class="card-footer bg-info">footer</div>
+            </div>
+        </div>
+        {% endblock %}
